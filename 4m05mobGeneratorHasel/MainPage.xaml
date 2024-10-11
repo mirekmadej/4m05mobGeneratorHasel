@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_4m05mobGeneratorHasel.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <HorizontalStackLayout>
+                <Label
+                    Text="ile znaków"
+
+                    WidthRequest="100"
+                    />
+                <Entry
+                    x:Name="entIleZnakow"
+                    Text="10"
+                    />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <CheckBox
+                    x:Name="chkMaleLitery"
+                    />
+                <Label
+                    Text="małe litery"
+                    WidthRequest="100"
+                    />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <CheckBox
+                    x:Name="chkDuzeLitery"
+                    />
+                <Label
+                    Text="duże litery"
+                    WidthRequest="100"
+                    />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <CheckBox
+                    x:Name="chkCyfry"
+                    />
+                <Label
+                    Text="cyfry"
+                    WidthRequest="100"
+                    />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <CheckBox
+                    x:Name="chkZnaki"
+                    />
+                <Label
+                    Text="znaki specjalne"
+                    WidthRequest="100"
+                    />
+            </HorizontalStackLayout>
+            <Button
+                Text="generuj"
+                Clicked="btnGeneruj"
+                />
+            <Label
+                Text="hasło: "
+                x:Name="lblHaslo"
+                />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
